@@ -19,9 +19,13 @@
     "php": ">=5.3",
     "illuminate/database": "^5.5"
   },
+
   "autoload": {
     "classmap": [
       "./"
-    ]
+    ],
+    "psr-4": {
+      "egimaben\\sqlseeder\\": "app"
+    }
   }
 }
