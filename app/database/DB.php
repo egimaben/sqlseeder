@@ -6,9 +6,11 @@
  * Time: 12:36
  */
 
-namespace App;
+namespace App\Database;
 
 use Illuminate\Database\Capsule\Manager;
+
+//extend Manager to provide a more user friendly interface for the user to interact with
 
 class DB extends Manager
 {
