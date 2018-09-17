@@ -12,11 +12,13 @@ class Bootstrap
 {
     protected static $connManager = null;
 
-    public static function boot()
+    public static function boot($configPath)
     {
-        $dotenv = new Dotenv(__DIR__);
+        $dotenv = new Dotenv($configPath);
 
         $dotenv->load();
+
+        $dotenv->required(['DB_DRIVER','DB_HOST', 'DB_NAME', 'DB_USER', 'DB_PASSWORD']);
 
         if (!isset(static::$connManager)) {
 

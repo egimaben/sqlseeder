@@ -30,9 +30,9 @@ namespace App;
  */
 class Seeder
 {
-    function __construct()
+    function __construct($projectRoot)
     {
-        Bootstrap::boot();
+        Bootstrap::boot($projectRoot);
 
     }
     function seed(){
