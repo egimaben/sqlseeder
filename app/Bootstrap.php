@@ -6,13 +6,18 @@ require "vendor/autoload.php";
 
 
 use Illuminate\Database\Capsule\Manager;
+use Dotenv\Dotenv;
 
 class Bootstrap
 {
     protected static $connManager = null;
 
-    public static function boot($dbdriver, $dbhost, $dbname, $dbuser, $dbpassword)
+    public static function boot()
     {
+        $dotenv = new Dotenv(__DIR__);
+
+        $dotenv->load();
+
         if (!isset(static::$connManager)) {
 
             static::$connManager = new Manager;
@@ -20,15 +25,15 @@ class Bootstrap
 
             static::$connManager->addConnection([
 
-                "driver" => $dbdriver,
+                "driver" => getenv('DB_DRIVER'),
 
-                "host" => $dbhost,
+                "host" => getenv('DB_HOST'),
 
-                "database" => $dbname,
+                "database" => getenv('DB_NAME'),
 
-                "username" => $dbuser,
+                "username" => getenv('DB_USER'),
 
-                "password" => $dbpassword
+                "password" => getenv('DB_PASSWORD')
 
             ]);
 

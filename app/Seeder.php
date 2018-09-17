@@ -30,9 +30,9 @@ namespace App;
  */
 class Seeder
 {
-    function __construct($dbdriver, $dbhost, $dbname, $dbuser, $dbpassword)
+    function __construct()
     {
-        Bootstrap::boot($dbdriver, $dbhost, $dbname, $dbuser, $dbpassword);
+        Bootstrap::boot();
 
     }
     function seed(){
