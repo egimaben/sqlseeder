@@ -1,0 +1,27 @@
+{
+  "name": "egimaben/sqlseeder",
+  "description": "A small, lightweight utility to seed SQL databases",
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://github.com/egimaben/sqlseeder",
+  "keywords": [
+    "sql",
+    "seeder"
+  ],
+  "authors": [
+    {
+      "name": "Benedict Egima",
+      "email": "egimaben@gmail.com",
+      "homepage": "http://egimaben.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.3",
+    "illuminate/database": "^5.5"
+  },
+  "autoload": {
+    "classmap": [
+      "./"
+    ]
+  }
+}
