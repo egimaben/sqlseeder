@@ -21,9 +21,11 @@
     "vlucas/phpdotenv": "^2.5",
     "symfony/console": "^3.4"
   },
-  "bin":["bin/console"],
+  "bin": [
+    "console"
+  ],
   "scripts": {
-    "console":"bin/console"
+    "console":"console"
   },
   "autoload": {
     "psr-4": {
