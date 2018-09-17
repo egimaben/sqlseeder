@@ -1,6 +1,7 @@
 #!/usr/bin/env php
 <?php
 
+namespace App\Console;
 require_once __DIR__ . '/vendor/autoload.php';
 
 
@@ -8,7 +9,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 $application = new \Symfony\Component\Console\Application;
 
 // Register all Commands
-$application->add(new \App\Console\SeedCommand);
+$application->add(new SeedCommand);
 
 // Run it
 $application->run();
