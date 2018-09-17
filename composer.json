@@ -21,9 +21,7 @@
     "vlucas/phpdotenv": "^2.5",
     "symfony/console": "^3.4"
   },
-  "bin": [
-    "console"
-  ],
+  "bin":["bin/console"],
   "scripts": {
     "console":"bin/console"
   },

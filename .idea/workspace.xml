@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54107173-a766-4a32-a368-ceacf581df45" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/console/SeedCommand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/core/App.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/core/Seeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/console" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/Bootstrap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DB.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/DB.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Seeder.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +41,7 @@
           <entry key="dummy" value="1" />
           <entry key="env" value="93" />
           <entry key="gitignore" value="5" />
-          <entry key="json" value="327" />
+          <entry key="json" value="384" />
           <entry key="php" value="3634" />
           <entry key="seed" value="149" />
         </counts>
@@ -57,7 +49,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="93" />
-          <entry key="JSON" value="327" />
+          <entry key="JSON" value="384" />
           <entry key="PHP" value="3634" />
           <entry key="PLAIN_TEXT" value="155" />
         </counts>
@@ -113,8 +105,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/composer.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+            <state relative-caret-position="345">
+              <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -270,12 +262,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1537172879684</updated>
-      <workItem from="1537172880993" duration="20865000" />
+      <workItem from="1537172880993" duration="22079000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20865000" />
+    <option name="totallyTimeSpent" value="22079000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -415,8 +407,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+        <state relative-caret-position="345">
+          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
         </state>
       </provider>
     </entry>
