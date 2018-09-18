@@ -32,13 +32,12 @@ abstract class Seeder
 
             $classInstance = new $clazz();
 
+            if(!($classInstance instanceof Seeder)){
+                throw new Exception("One or more seeder classes is not an instance of App\Core\Seeder::$clazz");
+            }
+
             $classInstance->seed();
         }
-    }
-
-    final public function runSeeds()
-    {
-        $this->seed();
     }
 
     abstract public function seed();
