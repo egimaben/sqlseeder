@@ -6,15 +6,24 @@ require "vendor/autoload.php";
 
 
 use Illuminate\Database\Capsule\Manager;
+
 use Dotenv\Dotenv;
+
+use Exception;
 
 class Bootstrap
 {
     protected static $connManager = null;
 
-    public static function boot($configPath)
+    public static function boot()
     {
-        $dotenv = new Dotenv($configPath);
+        if(!is_file($env = App::get('root').'/.env')){
+
+            throw new Exception("Required configuration file $env missing");
+
+        }
+
+        $dotenv = new Dotenv(App::get('root'));
 
         $dotenv->load();
 
@@ -40,8 +49,11 @@ class Bootstrap
             ]);
 
             static::$connManager->setAsGlobal();
+
             static::$connManager->bootEloquent();
+
             static::$connManager->bootEloquent();
+
         }
     }
 }

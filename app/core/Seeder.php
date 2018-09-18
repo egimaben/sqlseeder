@@ -8,25 +8,21 @@
 
 namespace App\Core;
 
-use Exception;
-
 abstract class Seeder
 {
-    private $projectRoot;
 
-    function __construct($projectRoot)
+    function __construct()
     {
 
+        try {
 
-        if (!isset($projectRoot)) {
+            Bootstrap::boot();
 
-            throw new Exception("projectRoot is required but not provided");
+        } catch (Exception $e) {
+
+            throw $e;
+
         }
-        $this->projectRoot = $projectRoot;
-
-        App::put('root',$projectRoot);
-
-        Bootstrap::boot($projectRoot);
 
     }
 
@@ -34,7 +30,7 @@ abstract class Seeder
     {
         foreach ($clazzArr as $clazz) {
 
-            $classInstance = new $clazz($this->projectRoot);
+            $classInstance = new $clazz();
 
             $classInstance->seed();
         }
