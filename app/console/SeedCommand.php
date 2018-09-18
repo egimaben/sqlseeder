@@ -27,7 +27,8 @@ class SeedCommand extends Command
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        echo "\ncurrent dir::".__DIR__;
+        echo "\ncurrent dir::" . __DIR__;
+        echo "\npwd::" . getcwd();
         $root = App::get('root');
 
         $output->writeln("\nConsole application executed, project root is $root");
