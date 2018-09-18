@@ -2,8 +2,17 @@
 <?php
 
 namespace App\Console;
-require_once __DIR__ . '/vendor/autoload.php';
-
+//require_once __DIR__ . '/vendor/autoload.php';
+if (is_file($autoload = getcwd() . '/vendor/autoload.php')) {
+    echo "first try\n";
+    require $autoload;
+} elseif (is_file($autoload = __DIR__ . '/../vendor/autoload.php')) {
+    echo "second try\n";
+    require($autoload);
+} elseif (is_file($autoload = __DIR__ . '/../../../autoload.php')) {
+    echo "third try\n";
+    require($autoload);
+}
 
 // Create the Application
 $application = new \Symfony\Component\Console\Application;
