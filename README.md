@@ -6,53 +6,15 @@ Create a project directory:
 ``` bash
 $ mkdir myseeder && cd myseeder
 ```
-Create your composer.json file
-``` bash
-vim composer.json
-```
-Add the following content
+Add `egimaben\sqlseeder` as a dependency:
 
-``` json
-{
-  "name": "egima/test",
-  "description": "testing client for egimaben/sqlseeder",
-  "license": "proprietary",
-  "repositories": [
-    {
-      "type": "package",
-      "package": {
-        "name": "egimaben/sqlseeder",
-        "version": "1.1-dev",
-        "source": {
-          "url": "git://github.com/egimaben/sqlseeder.git",
-          "type": "git",
-          "reference": "master"
-        },
-        "bin": [
-          "console"
-        ],
-        "autoload": {
-          "psr-4": {
-            "App\\Core\\": "app/core"
-          }
-        }
-      }
-    }
-  ],
-  "require": {
-    "egimaben/sqlseeder": "1.1-dev",
-    "illuminate/database": "^5.5",
-    "vlucas/phpdotenv": "^2.5",
-    "symfony/console": "^3.4"
-  }
-}
-```
-If you are installing `egimaben\sqlseeder` to use in an existing project, then just add the entry in the `repositories` array as well as the `require` entry.
-Complete the installation by running
 ``` bash
-$ composer install
+composer require egimaben\sqlseeder
 ```
-
+My demo here uses Faker for generating data, so you will need to require it as well:
+``` bash
+composer require fzaninotto/faker"
+```
 ## Usage
 
 Create `database\seeds` directory structure in your project root and create a primary seeder class whose name must be `database\seeds\MySeeder.php` and must implement `App\Core\Seeder`. Any other seeder classes can be invoked from this class' `seed` method. `App\Database\DB` is mirror of `Illuminate\Database\Capsule\Manager` and is accessible you the client, see examples below:
