@@ -102,7 +102,9 @@ When all is set, run the following:
 ``` bash
 ./vendor/bin/console sql:seed
 ```
+## Architecture Diagram
 
+![architectural diagram] (https://imgur.com/sCsFJvi)
 ## Change log
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
