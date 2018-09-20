@@ -104,7 +104,7 @@ When all is set, run the following:
 ```
 ## Architecture Diagram
 <p>&nbsp;</p>
-<img class="center-img" alt="SQLSeeder Architecture diagram" src="https://imgur.com/sCsFJvi">
+<img class="center-img" alt="SQLSeeder Architecture diagram" src="https://github.com/egimaben/sqlseeder/blob/master/seederarch.jpg">
 <p>&nbsp;</p>
 
 ## Change log
