@@ -77,9 +77,6 @@ class PersonTableSeeder extends Seeder
 <?php
 use App\Core\Seeder;
 
-require('PersonTableSeeder.php');
-require('TaskTableSeeder.php');
-
 class MySeeder extends Seeder
 {
 
