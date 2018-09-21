@@ -31,7 +31,7 @@ abstract class Seeder
     final public function invoke($clazzArr)
     {
         foreach ($clazzArr as $clazz) {
-            if (is_file($clazzPath = App::get('root') . '/database/seeds/' . $clazz)) {
+            if (is_file($clazzPath = App::get('root') . '/database/seeds/' . $clazz.'.php')) {
                 require $clazzPath;
                 $classInstance = new $clazz();
             } else throw new Exception("$clazz is not found on available path");
