@@ -4,7 +4,7 @@
   "type": "library",
   "license": "MIT",
   "homepage": "https://github.com/egimaben/sqlseeder",
-  "version":"1.0.2",
+  "version":"1.0.3",
   "keywords": [
     "sql",
     "seeder"
